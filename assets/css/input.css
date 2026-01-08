@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+.logo {
+    font-family: 'Montserrat', sans-serif; /* sleek, techy font */
+    font-weight: 900;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.logo:hover {
+    color: #3b82f6; /* subtle blue on hover */
+}
+	
+/* Fade In Up Animation */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease-out;
+}
+
+.fade-in-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+.animate-scroll {
+    display: flex;
+    width: max-content;
+    animation: scroll 15s linear infinite;
+}
+/* Success/Error message */
+.form-message { 
+    margin-bottom: 1rem; 
+    font-weight: 600; 
+}
